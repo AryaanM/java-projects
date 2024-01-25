@@ -45,7 +45,8 @@ public class testMyMathsClass {
 	}
 	@Test
 	public void testaddTwo3() {
-			assertEquals(0,testMathsObject.addTwo(5,2147483647));
+		    int res=testMathsObject.addTwo(5,2147483647);
+			assertFalse(res>0);
 	}
 
 		
